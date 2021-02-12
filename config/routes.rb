@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   end 
 
   resource :songs
+  get '/songs/:artist_id', to: 'dongd#index'
+
+
 end
